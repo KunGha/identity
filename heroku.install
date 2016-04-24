@@ -7,6 +7,13 @@ heroku addons:create heroku-redis:hobby-dev
 heroku addons:create mongolab:sandbox
 
 #install relational backend database (for legacy bridge)
+heroku addons:create cleardb:ignite
 
 #install logging cloud
 heroku addons:create logentries:le_tryit
+
+# push to mobile
+heroku addons:create pusher:sandbox
+
+#pubnub (client usage here)
+heroku addons:create pubnub:go-sandbox
