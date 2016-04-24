@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#install redis db for caching
+heroku addons:create heroku-redis:hobby-dev
+
+#install backend database document
+heroku addons:create mongolab:sandbox
+
+#install relational backend database (for legacy bridge)
+
+#install logging cloud
+heroku addons:create logentries:le_tryit
